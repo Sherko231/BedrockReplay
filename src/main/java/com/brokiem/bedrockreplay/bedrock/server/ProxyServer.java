@@ -19,6 +19,7 @@ import org.cloudburstmc.protocol.bedrock.BedrockPong;
 import org.cloudburstmc.protocol.bedrock.BedrockServerSession;
 import org.cloudburstmc.protocol.bedrock.codec.BedrockCodec;
 import org.cloudburstmc.protocol.bedrock.codec.v589.Bedrock_v589;
+import org.cloudburstmc.protocol.bedrock.codec.v594.Bedrock_v594;
 import org.cloudburstmc.protocol.bedrock.netty.initializer.BedrockServerInitializer;
 
 import java.net.InetSocketAddress;
@@ -30,7 +31,7 @@ public class ProxyServer {
 
     private boolean isRunning = false;
 
-    public static final BedrockCodec BEDROCK_CODEC = Bedrock_v589.CODEC;
+    public static final BedrockCodec BEDROCK_CODEC = Bedrock_v594.CODEC;
 
     private final InetSocketAddress bindAddress;
 
